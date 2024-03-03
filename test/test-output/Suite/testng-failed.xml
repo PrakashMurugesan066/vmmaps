@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="Map@1234"/>
+    <parameter name="email" value="mr.smartzee@gmail.com"/>
+    <classes>
+      <class name="vmmaps.LaunchApplicationAndLogin">
+        <methods>
+          <include name="enterEmail"/>
+          <include name="clickLogin"/>
+          <include name="enterPassword" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="validateLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- vmmaps.LaunchApplicationAndLogin -->
+      <class name="vmmaps.Registration">
+        <methods>
+          <include name="enterMobile"/>
+          <include name="enterEmail"/>
+          <include name="clickRegisterHere"/>
+          <include name="clickTermsPolicy"/>
+          <include name="enterConfirmPassword"/>
+          <include name="clickRegister"/>
+          <include name="enterFullName"/>
+          <include name="enterPassword"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickNewsLetter"/>
+        </methods>
+      </class> <!-- vmmaps.Registration -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
